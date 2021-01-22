@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Mi primer página con estilo</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="full-width NavBarP">
+		<div class="full-width NavBarP-Logo">Juan Espinoza</div>
+		<nav class="full-width NavBarP-Nav">
+			<ul class="full-width list-unstyled">
+				<li><a href="index.html">Página principal</a></li>
+				<li><a href="#!">Meditacion</a></li>
+				<li><a href="#!">Mi ciudad</a></li>
+				<li><a href="#!">Enlces</a></li>
+				<li>
+					<a href="#!" class="btn-login"><i class="fa fa-user" aria-hidden="true"></i> CONTACTO</a>
+					<div class="full-width Login">
+						<p class="text-center">
+							<form action="" name="datos">
+                                <div class="form-group">
+									<label for="nombre"><i class="fa fa-envelope" aria-hidden="true"></i> Nombre</label>
+                                    <input type="text" class="form-control" name="nombre" id="nombre" minlength="4" required>
+                                    <p style="color: red;" id="campo_nombre"></p>
+                                </div>
+                                <div class="form-group">
+									<label for="tel"><i class="fa fa-lock" aria-hidden="true"></i> Telefono</label>
+                                    <input type="text" class="form-control" name="tel" id="tel" minlength="6">
+                                    <p style="color: red;" id="campo_tel"></p>
+								</div>
+								<div class="form-group">
+									<label for="email"><i class="fa fa-envelope" aria-hidden="true"></i> E-mail</label>
+                                    <input type="text" class="form-control" name="email" id="email" required>
+                                    <p style="color: red;" id="campo_email"></p>
+								</div>
+								<br>
+								<p class="text-center">
+									<a href="#!" class="btn btn-danger btn-login" style="display:inline-block !important;">CANCELAR</a>
+									<button type="submit" class="btn btn-primary" id="send">ENVIAR</button>
+								</p>
+							</form>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<i class="fa fa-bars visible-xs btn-menuMobile ShowMenuMobile" aria-hidden="true"></i>
+	</header>
+
+	<section class="banner">
+		<div class="banner-content">
+			<h1>Mi primer pagina con estilo</h1>
+			<a href="#">¡BIENVENIDO A MI PAGINA TEST!</a>	
+		</div>
+	</section>
+	
+	<section class="mi-foto">
+		<h2 class="text-center font-oswald">MI FOTO</h2><br>
+		<div class="container">
+			<img src="./assets/img/mifoto.jpg" alt="mi foto" class=foto>
+		</div>
+    </section>
+    
+    <section class="firma-fecha">
+        <p>A 20/01/2021 por @JuanEspinoza</p>
+    </section>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
